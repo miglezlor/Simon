@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">KeDiseSimon</string>
+    <string name="red"> </string>
+    <string name="blue"> </string>
+    <string name="yellow"> </string>
+    <string name="green"> </string>
+    <string name="start">Ke Dise Simon</string>
+    <string name="level">Level: 1</string>
+</resources>
