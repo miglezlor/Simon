@@ -53,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    //evento para cuando el usuario pulsa el boton azul
     void blueEvent(View a){
 
 
@@ -71,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    //evento para cuando el usuario pulsa el boton rojo
     void redEvent(View r){
 
 
@@ -89,6 +91,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    //evento para cuando el usuario pulsa el boton verde
     void greenEvent(View ve){
 
 
@@ -108,6 +111,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    //evento para cuando el usuario pulsa el boton amarillo
     void yellowEvent(View a){
 
 
@@ -129,6 +133,8 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+    //metodos para comenzar y parar el timer
+
     public void startTimer(){
         timer = new Timer();
         simonDecides();
@@ -140,6 +146,8 @@ public class MainActivity extends AppCompatActivity {
             timer= null;
         }
     }
+
+    //metodo en el cual Simon dira sus opciones.
     void simonDecides(){
         timerTarea = new TimerTask() {
             @Override
@@ -211,7 +219,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-
+    //metodo para comprobar si las elecciones del usuario coinciden con las elegidas por la maquina
     void check(){
         if(cont==4) {
             String simonElect = simonColors.toString();
@@ -229,6 +237,8 @@ public class MainActivity extends AppCompatActivity {
             userColors.clear();
         }
     }
+
+    //metodo para generar un numero random el cual corresponde a un color
     public int random(){
 
        return (int) Math.floor(Math.random()*4);
